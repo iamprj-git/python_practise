@@ -76,9 +76,12 @@ grid = [
     [0, 0, 0, 0, 8, 0, 0, 7, 9]
 ]
 
-if solve_sudoku(grid):
-    print("Sudoku solution:")
-    print_grid(grid)
+if __name__ == "__main__":
+    
 
-else:
-    print("No solution exists.")
+    if solve_sudoku(grid):
+        print("Sudoku solution:")
+        print_grid(grid)
+
+    else:
+        print("No solution exists.")
