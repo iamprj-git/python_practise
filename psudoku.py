@@ -58,10 +58,9 @@ def solve_sudoku(grid):
 def print_grid(grid):
     for row in range(9):
         for col in range(9):
-            print grid[row][col],
-        print
+            print(grid[row][col], end=" ")
+        print()
         
-
 
 # Example puzzle
 # 0 represents empty cells
@@ -79,7 +78,7 @@ grid = [
 
 if solve_sudoku(grid):
     print("Sudoku solution:")
-
     print_grid(grid)
+
 else:
     print("No solution exists.")
