@@ -1,3 +1,4 @@
+
 def find_empty_location(grid, l):
     for row in range(9):
         for col in range(9):
@@ -35,9 +36,7 @@ def is_safe(grid, row, col, num):
         grid, row - row % 3, col - col % 3, num)
 
 
-def solve_sudoku(grid):
-    l = [0, 0]
-    if not find_empty_location(grid, l):
+def solve_sudoku(grid):puzzle l):
         return True
 
     row = l[0]
@@ -61,7 +60,6 @@ def print_grid(grid):
             print grid[row][col],
         print
         
-
 
 # Example puzzle
 # 0 represents empty cells
