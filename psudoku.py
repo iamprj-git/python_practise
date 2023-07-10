@@ -57,8 +57,8 @@ def solve_sudoku(grid):puzzle l):
 def print_grid(grid):
     for row in range(9):
         for col in range(9):
-            print grid[row][col],
-        print
+            print(grid[row][col], end=" ")
+        print()
         
 
 # Example puzzle
@@ -75,9 +75,12 @@ grid = [
     [0, 0, 0, 0, 8, 0, 0, 7, 9]
 ]
 
-if solve_sudoku(grid):
-    print("Sudoku solution:")
+if __name__ == "__main__":
+    
 
-    print_grid(grid)
-else:
-    print("No solution exists.")
+    if solve_sudoku(grid):
+        print("Sudoku solution:")
+        print_grid(grid)
+
+    else:
+        print("No solution exists.")
